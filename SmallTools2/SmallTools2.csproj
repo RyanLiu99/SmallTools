@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9E12CB0-6054-4402-BFE2-508B6EAC00C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmallTools2</RootNamespace>
+    <AssemblyName>SmallTools2</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Org.RyanLiu.SmallTools.MainForm</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=1.0.4.20163, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\PowerSurvey\thirdPartyLib\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySQLDriverCS">
+      <HintPath>..\MySQLDriverCS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Reactive, Version=1.0.10621.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Org\RyanLiu\SmallTools\BreakLinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\ChangeFileEncodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\ChangeFileEncodingForm.Designer.cs">
+      <DependentUpon>ChangeFileEncodingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\DbUtil.cs" />
+    <Compile Include="Org\RyanLiu\SmallTools\EncodingStrUtilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\EncodingStrUtilForm.Designer.cs">
+      <DependentUpon>EncodingStrUtilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\FormGetEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\GetEmailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\OpenUrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\OpenUrlForm.Designer.cs">
+      <DependentUpon>OpenUrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\PropertyGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\PropertyGeneratorForm.Designer.cs">
+      <DependentUpon>PropertyGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\QueryXmlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\QueryXmlForm.Designer.cs">
+      <DependentUpon>QueryXmlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\ReadBigFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\Templates\PropGenerator.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\TestConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\UnZipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Org\RyanLiu\SmallTools\UnZipForm.Designer.cs">
+      <DependentUpon>UnZipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Org\RyanLiu\StringDate\StringDateUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\FileUtility.cs" />
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\BreakLinesForm.resx">
+      <DependentUpon>BreakLinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\ChangeFileEncodingForm.resx">
+      <DependentUpon>ChangeFileEncodingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\EncodingStrUtilForm.resx">
+      <DependentUpon>EncodingStrUtilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\FormGetEmail.resx">
+      <DependentUpon>FormGetEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\GetEmailForm.resx">
+      <DependentUpon>GetEmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\OpenUrlForm.resx">
+      <DependentUpon>OpenUrlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\PropertyGeneratorForm.resx">
+      <DependentUpon>PropertyGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\QueryXmlForm.resx">
+      <DependentUpon>QueryXmlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\ReadBigFileForm.resx">
+      <DependentUpon>ReadBigFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\TestConnectionForm.resx">
+      <DependentUpon>TestConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Org\RyanLiu\SmallTools\UnZipForm.resx">
+      <DependentUpon>UnZipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\SmallTools2.Org.RyanLiu.SmallTools.PropertyGeneratorForm+Property.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Org\RyanLiu\SmallTools\Templates\PropGenerator.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>PropGenerator.cs</LastGenOutput>
+    </Content>
+    <Content Include="Org\RyanLiu\SmallTools\Templates\TextTemplate1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TextTemplate1.txt</LastGenOutput>
+    </Content>
+    <Content Include="Org\RyanLiu\SmallTools\Templates\TextTemplate1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextTemplate1.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
