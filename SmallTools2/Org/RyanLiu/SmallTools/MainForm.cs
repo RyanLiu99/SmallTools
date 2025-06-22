@@ -63,6 +63,7 @@ namespace Org.RyanLiu.SmallTools
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btbGetEmail = new System.Windows.Forms.Button();
             this.btnBreakLines = new System.Windows.Forms.Button();
             this.btnReadBigFile = new System.Windows.Forms.Button();
@@ -181,6 +182,7 @@ namespace Org.RyanLiu.SmallTools
             this.Controls.Add(this.btnReadBigFile);
             this.Controls.Add(this.btnBreakLines);
             this.Controls.Add(this.btbGetEmail);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.ResumeLayout(false);
